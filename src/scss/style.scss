@@ -1,0 +1,154 @@
+/*
+Author: Smart Code Media
+Project:  
+Version:  1.0
+
+==================
+
+====================*/
+
+/* 0. Vars
+*************************************/
+$primary: #edd85e;
+$secondary: #7e8f9e;
+
+/* 1. General Changes
+*************************************/
+body {
+  font-size: 14px;
+  background: black;
+}
+
+i, span {
+  color: $primary;
+}
+
+.navbar {
+  opacity: 0.9;
+}
+
+.nav-item {
+  border: 1px solid $primary transparent;
+  &:hover {
+    border: 1px solid $primary;
+  }
+}
+
+.social-icons {
+  font-size: 18px;
+  padding: 5px;
+  color: $primary;
+  &:hover {
+    color: lighten($primary, 20%);
+  }
+}
+
+.btn-primary {
+  border: 1px solid $primary;
+  background: transparent;
+  &:hover {
+    border: 1px solid $primary;
+    background: rgba(231,176,41,0.3);
+  }
+}
+
+#showcase {
+  color: white;
+  background-image: url(../img/showcase/bg.jpg);
+  background-size: auto 100vh;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.carousel {
+  min-height: 100vh;
+}
+
+.carousel-item {
+  height: 85vh;
+}
+
+.carousel-caption {
+  h3 {
+    color: $primary;
+  }
+  h5 {
+    font-size: 2.8rem;
+  }
+}
+
+.heading-name {
+  color: $primary;
+  padding: 20px;
+  h6 {
+    color: $secondary;
+  }
+}
+
+#about {
+  background-image: url(../img/about/about-bg.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  h3{
+    color: white;
+  }
+  p{
+    color: $secondary;
+  }
+  h5 {
+    color: white;
+  }
+}
+
+/* ______________ Portafolio ______________*/
+.portafolio-menu {
+  text-align: center;
+  ul li{
+    display: inline-block;
+    margin: 10px;
+    color: $primary;
+    padding: 10px 15px;
+    cursor: pointer;
+    &:hover{
+      background: orange;
+      color: white;
+    }
+  }
+}
+
+.portafolio-items{
+  .item img{
+    border: 3px solid white;
+    width: 270px;
+    height: 270px;
+    float: left;
+  }
+}
+
+/*-------- Skills Section---------------*/
+#skills{
+  background-image: url(../img/skills/skills.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+  h3{
+    color: $primary;
+    font-size: 18px;
+  }
+}
+/*-------- Team  ---------------*/
+.card{
+  transition: all 0.7s ease-in-out;
+  &:hover{
+    cursor: pointer;
+    box-shadow: 0px 3px 113px -3px $primary;
+  }
+}
+
+/*-------- Subscribe ---------------*/
+#subscribe {
+  background-image: url(../img/news/news.jpg);
+  background-position: 87%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
